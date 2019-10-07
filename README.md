@@ -2,10 +2,10 @@
 ---
 problem and solve path
 ```
-Root/
-  -
-  - Folder/
-        -  ----- problem.md (Question)
-        -  ----- solve.php  (Answer)
+root   
+│
+└───folder
+│   │   problem.md
+│   │   solve.php
 
 ```

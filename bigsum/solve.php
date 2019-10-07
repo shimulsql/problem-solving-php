@@ -1,7 +1,7 @@
 <?php
 
 
-// Input pairs are seperated by new line and pair numbers are seperated by comma(,)
+// Input pairs are separated by new line and pair numbers are separated by comma(,)
 $input = "199,911
 119,991
 24,13";
@@ -14,7 +14,7 @@ $array = explode("\n", $input);
 
 // working with pairs one by one through loop
 for ($i=0; $i < count($array); $i++) { 
-    // split the pair separated by comma
+    // split the pair separated by comma then get numbers in a array.
     $numbers = explode(',', $array[$i]);
 
     // reverse these number
@@ -33,6 +33,7 @@ for ($i=0; $i < count($array); $i++) {
   // check sum leading 0, if have then remove
   for ($j=0; $j < count($split_sum); $j++) { 
     if($split_sum[$j] == 0){
+      // remove this index
       unset($split_sum[$j]);
     }else{
       // if leading 0 not exists then stop looping
@@ -40,7 +41,7 @@ for ($i=0; $i < count($array); $i++) {
     }
   }
 
-  // add sum to the result, array to string
+  // add sum to the result, array to string conv.
   $output .= implode('', $split_sum)."<br>";
 }
 
